@@ -18,6 +18,7 @@ The app predicts profitability from user inputs such as shoe model, colorway, co
 .
 ├── app.py
 ├── model.ipynb
+├── requirements.txt
 ├── jordan_market_dataset_2026.csv
 └── artifacts
     ├── svm_profitability_pipeline.joblib
@@ -117,7 +118,7 @@ python -m venv .venv
 
 ```powershell
 pip install --upgrade pip
-pip install streamlit pandas scikit-learn joblib numpy
+pip install -r requirements.txt
 ```
 
 ## 3) Run the Streamlit app
@@ -166,16 +167,17 @@ This helps compare pure model output vs custom risk threshold.
    - `app.py`
    - `artifacts/` folder
    - `jordan_market_dataset_2026.csv`
-   - dependency list (recommended: `requirements.txt`)
 
-Recommended `requirements.txt`:
+- `requirements.txt`
+
+Current `requirements.txt`:
 
 ```text
-streamlit
+streamlit==1.32.0
+scikit-learn==1.4.0
+joblib==1.3.2
 pandas
 numpy
-scikit-learn
-joblib
 ```
 
 ## Troubleshooting
