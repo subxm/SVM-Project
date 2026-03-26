@@ -1,0 +1,22 @@
+{
+  "feature_columns": [
+    "Shoe_Model",
+    "Colorway",
+    "Condition",
+    "Retail_Price_USD",
+    "Sales_Channel",
+    "Days_in_Inventory"
+  ],
+  "categorical_cols": [
+    "Shoe_Model",
+    "Colorway",
+    "Condition",
+    "Sales_Channel"
+  ],
+  "numeric_cols": [
+    "Retail_Price_USD",
+    "Days_in_Inventory"
+  ],
+  "target_name": "Target_Profitable",
+  "positive_class_meaning": "Profitable"
+}
